@@ -36,3 +36,6 @@ guests.html ── GET  /api/rsvp ──>  api/rsvp.js  ── SQL ──>  full
 
 - **Public** (`GET /api/rsvp` with no token) returns only the **total headcount**.
   Names and answers are never exposed to guests.
+- **Admin** (`GET /api/rsvp` with the correct `x-admin-token` header) returns every
+row. `guests.html` sends the token you type into the prompt.
+  
