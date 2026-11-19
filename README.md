@@ -40,4 +40,10 @@ guests.html ── GET  /api/rsvp ──>  api/rsvp.js  ── SQL ──>  full
 row. `guests.html` sends the token you type into the prompt.
 - The same name replying twice **updates** the existing row instead of creating a
   duplicate (enforced by a unique index on `lower(name)`).
-  
+
+---
+
+## 1. Set up the database (Neon)
+
+1. Sign in at **https://neon.tech** and create a free project
+   (region: `AWS Asia Pacific (Singapore)` is closest to the Philippines).
