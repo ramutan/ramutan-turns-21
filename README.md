@@ -24,3 +24,6 @@ guests.html ── GET  /api/rsvp ──>  api/rsvp.js  ── SQL ──>  full
 ```
 
 ### The four pieces
+
+| File | Role |
+| --- | --- |
