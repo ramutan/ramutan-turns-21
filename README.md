@@ -127,3 +127,6 @@ npm run dev          # = vercel dev
 On first run, `vercel dev` will ask you to link the project and will pull down
 your env vars from Vercel (or let you set them locally). Open the URL it prints
 (usually `http://localhost:3000`) and the form will work end-to-end.
+
+To set env vars only on your machine for local dev, create a `.env.local` file
+in the project root (it is git-ignored):
