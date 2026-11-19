@@ -48,3 +48,5 @@ row. `guests.html` sends the token you type into the prompt.
 1. Sign in at **https://neon.tech** and create a free project
    (region: `AWS Asia Pacific (Singapore)` is closest to the Philippines).
 2. Open the project's **SQL Editor**.
+3. Copy the contents of [`schema.sql`](./schema.sql) and run it. You should see
+   `rsvps` appear under **Tables**.
