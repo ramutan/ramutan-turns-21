@@ -91,3 +91,6 @@ git push -u origin main
    | --- | --- | --- |
    | `DATABASE_URL` | your Neon connection string | Production, Preview, Development |
    | `ADMIN_TOKEN` | any secret word, e.g. `prince-nov-28` | Production, Preview, Development |
+
+7. Click **Deploy**. After ~30 seconds you'll get a URL like
+   `https://prince-21st-rsvp.vercel.app`.
