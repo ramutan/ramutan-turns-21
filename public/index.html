@@ -228,6 +228,10 @@
                     $('#count').textContent = n ? `${n} ${n === 1 ? 'guest has' : 'guests have'} confirmed so far.` : '';
                 } catch {}
             }
+            refreshCount();
+            setInterval(refreshCount, 5000);
+
+        
 
 
 
