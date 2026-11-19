@@ -137,3 +137,9 @@ ADMIN_TOKEN=prince-nov-28
 ```
 
 `vercel dev` reads `.env.local` automatically.
+
+---
+
+## 5. Share it
+
+
