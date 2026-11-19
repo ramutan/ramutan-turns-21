@@ -22,3 +22,5 @@ guests.html ── GET  /api/rsvp ──>  api/rsvp.js  ── SQL ──>  full
    (with        x-admin-token                       (only when token matches
    header)                                            ADMIN_TOKEN env var)
 ```
+
+### The four pieces
