@@ -66,3 +66,6 @@ git init
 git add .
 git commit -m "Prince's 21st RSVP"
 git branch -M main
+git remote add origin https://github.com/<you>/prince-21st-rsvp.git
+git push -u origin main
+```
