@@ -237,8 +237,18 @@
                 const btn = $('#go');
                 btn.disabled = true;
                 msg.textContent = 'Sending…';
-                
+
             try {
+                const r = await fetch('/api/rsvp', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name: $('#name').value,
+                        attending,
+                        party_size: attending ? +f.size.value : 0,
+                        companions: attending ? $('#comp').value : ''
+                    })
+                });
 
         
 
