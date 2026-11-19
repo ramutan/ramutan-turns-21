@@ -27,3 +27,4 @@ guests.html ── GET  /api/rsvp ──>  api/rsvp.js  ── SQL ──>  full
 
 | File | Role |
 | --- | --- |
+| `public/index.html` | The invitation page guests see. Posts the form to `/api/rsvp` and shows a live "X guests have confirmed" counter. |
