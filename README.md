@@ -154,3 +154,8 @@ ADMIN_TOKEN=prince-nov-28
 prince-21st-rsvp/
 ├── api/
 │   └── rsvp.js          Serverless function (POST saves, GET reads)
+├── public/
+│   ├── index.html       Invitation + RSVP form (guest-facing)
+│   ├── guests.html      Live guest list (admin-only)
+│   ├── invite.png       Your invitation image — add this yourself
+│   └── photo.png        Your photo image — add this yourself
