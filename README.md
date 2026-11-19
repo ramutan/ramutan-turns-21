@@ -118,3 +118,8 @@ so the server returns a 404 **HTML** page, and `fetch().json()` chokes on the
 
 **Fix:** run the project through Vercel's dev server, which serves both the
 static files in `public/` and the serverless function in `api/`.
+
+```bash
+npm install
+npm run dev          # = vercel dev
+```
