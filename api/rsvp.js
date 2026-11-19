@@ -39,3 +39,10 @@ export default async function handler(req, res) {
             FROM rsvps ORDER BY updated_at DESC`;
         return res.status(200).json({ totals: t, rows });
     }
+
+    return res.status(405).json({ error: 'Method not allowed' });
+  } catch (e) {
+    console.error(e);
+    return res.status(500).json({ error: 'Something went wrong. Please try again.' });
+  }
+} 
