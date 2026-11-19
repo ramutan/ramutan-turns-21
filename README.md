@@ -130,3 +130,7 @@ your env vars from Vercel (or let you set them locally). Open the URL it prints
 
 To set env vars only on your machine for local dev, create a `.env.local` file
 in the project root (it is git-ignored):
+
+```
+DATABASE_URL=postgresql://neondb_owner:xxxx@ep-xxx-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require
+ADMIN_TOKEN=prince-nov-28
