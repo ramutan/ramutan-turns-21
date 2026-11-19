@@ -54,3 +54,4 @@ row. `guests.html` sends the token you type into the prompt.
    ```
    postgresql://neondb_owner:xxxxxxxx@ep-xxx-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require
    ```
+   Copy it. You will paste it into Vecel as `DATABASE_URL`.
