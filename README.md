@@ -50,3 +50,7 @@ row. `guests.html` sends the token you type into the prompt.
 2. Open the project's **SQL Editor**.
 3. Copy the contents of [`schema.sql`](./schema.sql) and run it. You should see
    `rsvps` appear under **Tables**.
+4. On the project **Dashboard**, find the **Connection string**. It looks like:
+   ```
+   postgresql://neondb_owner:xxxxxxxx@ep-xxx-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require
+   ```
