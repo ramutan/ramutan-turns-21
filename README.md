@@ -60,3 +60,6 @@ row. `guests.html` sends the token you type into the prompt.
 
 ## 2. Push the project to Github
 
+```bash
+cd prince-21st-rsvp
+git init
