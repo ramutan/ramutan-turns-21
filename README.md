@@ -181,3 +181,7 @@ table from `schema.sql` has not been created yet.
 **Guest list page says "Wrong token."**
 The `ADMIN_TOKEN` you typed does not match the one in Vercel env vars.
 Reload the page to be prompted again.
+
+**Headcount shows but names never appear**
+The public GET intentionally hides names. Open `/guests.html` and enter the
+admin token to see the full list.
