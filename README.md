@@ -11,3 +11,6 @@ Guests open a link, fill in a short form, and their reply is saved to a
 ```
 Browser (guest)            Vercel (serverless)         Neon (Postgres)
 ────────────────           ──────────────────          ───────────────
+index.html  ── POST /api/rsvp ──>  api/rsvp.js  ── SQL ──>  rsvps table
+            <── JSON { ok: true } ──                       (name, attending,
+                                                       party_size, companions)
