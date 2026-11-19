@@ -145,3 +145,12 @@ ADMIN_TOKEN=prince-nov-28
 - **Guests**: send them `https://YOUR-SITE.vercel.app/`
 - **You (admin)**: bookmark `https://YOUR-SITE.vercel.app/guests.html` and type
   your `ADMIN_TOKEN` when prompted. The list refreshes every 3 seconds.
+
+---
+
+## Project structure
+
+```
+prince-21st-rsvp/
+├── api/
+│   └── rsvp.js          Serverless function (POST saves, GET reads)
