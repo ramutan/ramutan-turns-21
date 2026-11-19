@@ -164,3 +164,7 @@ prince-21st-rsvp/
 ├── vercel.json          Tells Vercel: static files live in public/
 └── README.md            This file
 ```
+
+---
+
+## Troubleshooting
