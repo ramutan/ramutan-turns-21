@@ -134,3 +134,6 @@ in the project root (it is git-ignored):
 ```
 DATABASE_URL=postgresql://neondb_owner:xxxx@ep-xxx-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require
 ADMIN_TOKEN=prince-nov-28
+```
+
+`vercel dev` reads `.env.local` automatically.
