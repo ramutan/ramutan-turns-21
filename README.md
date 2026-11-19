@@ -78,3 +78,6 @@ git push -u origin main
 ## 3. Deploy to Vercel
 
 ### Option A - via the Vercel dashboard (easiest)
+
+1. Go to **https://vercel.com/new**.
+2. Import the GitHub repo you just pushed.
