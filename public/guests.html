@@ -94,3 +94,14 @@
               '>': '&gt;',
               '"': '&quot;'
             }[c]));
+
+            async function load() {
+              try {
+                const r = await fetch('/api/rsvp', { headers: { 'x-admin-token': token } });
+                const d = await r.json();
+
+                if (!d.rows) {
+                  document.getElementById('live').textContent = 'Wrong token. Reload to try again.';
+                  sessionStorage.removeItem('t');
+                  return;
+                }
