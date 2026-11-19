@@ -168,3 +168,7 @@ prince-21st-rsvp/
 ---
 
 ## Troubleshooting
+
+**`Unexpected token '<' ... is not valid JSON` on submit / on page load**
+You are opening `index.html` directly or serving it with a static server.
+Run `vercel dev` instead — see section 4.
