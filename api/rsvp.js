@@ -21,3 +21,15 @@ export default async function handler(req, res) {
               companions = EXCLUDED.companions, updated_at = now()`;
             return res.status(200).json({ ok: true });
         }
+
+        if (req.method === 'GET') {
+            const token = req.headers['x-admin-token'];
+            const [t] = await sql`
+                SELECT COALESCE(SUM(party_size) FILTER (WHERE attending), 0)::int AS people,
+                    COUNT(*) FILTER (WHERE attending)::int AS yes,
+                    COUNT(*) FILTER (WHERE NOT attending)::int AS no
+                 FROM rsvps`;
+            if (!token || token !== process.env.ADMIN_TOKEN) {
+             // Public: only the headcount is exposed, never the names.
+            return res.status(200).json({ totals: { people: t.people } });
+        }
