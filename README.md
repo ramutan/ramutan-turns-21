@@ -34,3 +34,5 @@ guests.html ── GET  /api/rsvp ──>  api/rsvp.js  ── SQL ──>  full
 
 ### Privacy
 
+- **Public** (`GET /api/rsvp` with no token) returns only the **total headcount**.
+  Names and answers are never exposed to guests.
