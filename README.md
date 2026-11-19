@@ -189,3 +189,16 @@ admin token to see the full list.
 **Replying twice creates two rows**
 The unique index on `lower(name))` was not created. Re-run the `CREATE UNIQUE
 INDEX` line from `schema.sql` in the Neon SQL Editor.
+
+---
+
+## tech notes
+
+- **Runtime:** Vercel Serverless Functions (Node.js, zero build step).
+- **Database:** Neon serverless Postgres over HTTP via `@neondatabase/serverless`.
+- **No frameworks.** Plain HTML + CSS + vanilla JS. The whole site is two HTML
+  files and one JS function.
+- **Cold-start cost:** the function is ~50 lines; cold starts are well under
+  Neon's free-tier limits for a birthday party.
+
+
