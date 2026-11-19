@@ -159,3 +159,8 @@ prince-21st-rsvp/
 │   ├── guests.html      Live guest list (admin-only)
 │   ├── invite.png       Your invitation image — add this yourself
 │   └── photo.png        Your photo image — add this yourself
+├── package.json
+├── schema.sql           Run once in Neon to create the table
+├── vercel.json          Tells Vercel: static files live in public/
+└── README.md            This file
+```
