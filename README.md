@@ -1,2 +1,5 @@
-# ramutan-turns-21
-A digital invitation for Ramutan's 21st birthday celebration
+# Prince's 21st Birthday RSVP
+
+A tiny, dependency-light RSVP site for Prince's 21st birthday.
+Guests open a link, fill in a short form, and their reply is saved to a
+**Neon** Postgres database. The host views a live guest list on a private page.
