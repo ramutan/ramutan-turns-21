@@ -83,3 +83,14 @@
             </thead>
             <tbody id="rows"></tbody>
         </table>
+
+        <script>
+            let token = sessionStorage.getItem('t') || prompt('Admin token');
+            sessionStorage.setItem('t', token || '');
+
+            const esc = s => String(s).replace(/[&<>"]/g, c => ({
+              '&': '&amp;',
+              '<': '&lt;',
+              '>': '&gt;',
+              '"': '&quot;'
+            }[c]));
