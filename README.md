@@ -30,3 +30,4 @@ guests.html ── GET  /api/rsvp ──>  api/rsvp.js  ── SQL ──>  full
 | `public/index.html` | The invitation page guests see. Posts the form to `/api/rsvp` and shows a live "X guests have confirmed" counter. |
 | `public/guests.html` | Private admin page. Asks for the admin token, then lists every RSVP, refreshing every 3 seconds. |
 | `api/rsvp.js` | A Vercel Serverless Function. Handles `POST` (save a reply) and `GET` (read totals, or full rows if the admin token matches). |
+| `schema.sql` | The table definition. Run once in the Neon SQL Editor. |
