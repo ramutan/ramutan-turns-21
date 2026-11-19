@@ -100,3 +100,7 @@ git push -u origin main
 ```bash
 npm i -g vercel
 cd prince-21st-rsvp
+vercel            # follow the prompts; this creates a preview deployment
+vercel env add DATABASE_URL      # paste the Neon connection string
+vercel env add ADMIN_TOKEN       # paste your chosen admin token
+vercel --prod     # deploy to production
