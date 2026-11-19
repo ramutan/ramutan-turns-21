@@ -123,3 +123,7 @@ static files in `public/` and the serverless function in `api/`.
 npm install
 npm run dev          # = vercel dev
 ```
+
+On first run, `vercel dev` will ask you to link the project and will pull down
+your env vars from Vercel (or let you set them locally). Open the URL it prints
+(usually `http://localhost:3000`) and the form will work end-to-end.
