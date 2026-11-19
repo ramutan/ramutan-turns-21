@@ -77,3 +77,4 @@ git push -u origin main
 
 ## 3. Deploy to Vercel
 
+### Option A - via the Vercel dashboard (easiest)
