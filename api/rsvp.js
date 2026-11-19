@@ -33,3 +33,9 @@ export default async function handler(req, res) {
              // Public: only the headcount is exposed, never the names.
             return res.status(200).json({ totals: { people: t.people } });
         }
+
+        const rows = await sql`
+            SELECT name, attending, party_size, companions, updated_at
+            FROM rsvps ORDER BY updated_at DESC`;
+        return res.status(200).json({ totals: t, rows });
+    }
