@@ -220,6 +220,15 @@
                 if (yes && !f.size.value) f.size.value = '1';
             }));
 
+            async function refreshCount() {
+                try {
+                    const r = await fetch('/api/rsvp');
+                    const d = await r.json();
+                    const n = d.totals?.people ?? 0;
+                    $('#count').textContent = n ? `${n} ${n === 1 ? 'guest has' : 'guests have'} confirmed so far.` : '';
+                } catch {}
+            }
+
 
 
 
