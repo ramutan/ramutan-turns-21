@@ -172,3 +172,8 @@ prince-21st-rsvp/
 **`Unexpected token '<' ... is not valid JSON` on submit / on page load**
 You are opening `index.html` directly or serving it with a static server.
 Run `vercel dev` instead — see section 4.
+
+**`Something went wrong. Please try again.` on submit**
+Check the Vercel function logs (Vercel dashboard → your project → Logs, or
+`vercel logs <deployment-url>`). Most often `DATABASE_URL` is missing or the
+table from `schema.sql` has not been created yet.
