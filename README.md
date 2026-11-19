@@ -83,3 +83,6 @@ git push -u origin main
 2. Import the GitHub repo you just pushed.
 3. **Framework Preset** should auto-detect as **Other**. Leave it.
 4. **Root Directory** = `./` (the repo root).
+5. Skip build settings — Vercel reads `vercel.json` (`outputDirectory: "public"`)
+   and auto-detects `api/rsvp.js` as a Serverless Function.
+6. Open **Environment Variables** and add:
