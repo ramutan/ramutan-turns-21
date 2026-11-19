@@ -14,3 +14,6 @@ Browser (guest)            Vercel (serverless)         Neon (Postgres)
 index.html  ── POST /api/rsvp ──>  api/rsvp.js  ── SQL ──>  rsvps table
             <── JSON { ok: true } ──                       (name, attending,
                                                        party_size, companions)
+
+                                                       index.html  ── GET  /api/rsvp ──>  api/rsvp.js  ── SQL ──>  COUNT/SUM
+            <── JSON { totals: { people } }  (public, headcount only)
