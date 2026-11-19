@@ -72,3 +72,8 @@ git push -u origin main
 
 > Add your `invite.png` and `photo.png` files into `public/` before committing.
 > They are referenced by `index.html` and are not included in this repo.
+
+---
+
+## 3. Deploy to Vercel
+
