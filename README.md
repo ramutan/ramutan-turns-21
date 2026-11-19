@@ -185,3 +185,7 @@ Reload the page to be prompted again.
 **Headcount shows but names never appear**
 The public GET intentionally hides names. Open `/guests.html` and enter the
 admin token to see the full list.
+
+**Replying twice creates two rows**
+The unique index on `lower(name))` was not created. Re-run the `CREATE UNIQUE
+INDEX` line from `schema.sql` in the Neon SQL Editor.
