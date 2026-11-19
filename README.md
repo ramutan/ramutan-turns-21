@@ -81,3 +81,5 @@ git push -u origin main
 
 1. Go to **https://vercel.com/new**.
 2. Import the GitHub repo you just pushed.
+3. **Framework Preset** should auto-detect as **Other**. Leave it.
+4. **Root Directory** = `./` (the repo root).
