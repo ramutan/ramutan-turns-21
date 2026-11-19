@@ -63,3 +63,6 @@ row. `guests.html` sends the token you type into the prompt.
 ```bash
 cd prince-21st-rsvp
 git init
+git add .
+git commit -m "Prince's 21st RSVP"
+git branch -M main
