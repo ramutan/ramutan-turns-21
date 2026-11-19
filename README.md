@@ -142,4 +142,6 @@ ADMIN_TOKEN=prince-nov-28
 
 ## 5. Share it
 
-
+- **Guests**: send them `https://YOUR-SITE.vercel.app/`
+- **You (admin)**: bookmark `https://YOUR-SITE.vercel.app/guests.html` and type
+  your `ADMIN_TOKEN` when prompted. The list refreshes every 3 seconds.
