@@ -94,3 +94,9 @@ git push -u origin main
 
 7. Click **Deploy**. After ~30 seconds you'll get a URL like
    `https://prince-21st-rsvp.vercel.app`.
+
+### Option B - via the Vercel CLI
+
+```bash
+npm i -g vercel
+cd prince-21st-rsvp
