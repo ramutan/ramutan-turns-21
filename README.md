@@ -115,3 +115,6 @@ screenshot happens when `index.html` is opened directly (or served by a plain
 static server like VS Code Live Server). In that case `/api/rsvp` does not exist,
 so the server returns a 404 **HTML** page, and `fetch().json()` chokes on the
 `<!DOCTYPE html>` at the start.
+
+**Fix:** run the project through Vercel's dev server, which serves both the
+static files in `public/` and the serverless function in `api/`.
