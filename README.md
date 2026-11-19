@@ -177,3 +177,7 @@ Run `vercel dev` instead — see section 4.
 Check the Vercel function logs (Vercel dashboard → your project → Logs, or
 `vercel logs <deployment-url>`). Most often `DATABASE_URL` is missing or the
 table from `schema.sql` has not been created yet.
+
+**Guest list page says "Wrong token."**
+The `ADMIN_TOKEN` you typed does not match the one in Vercel env vars.
+Reload the page to be prompted again.
