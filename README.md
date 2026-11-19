@@ -38,4 +38,6 @@ guests.html ── GET  /api/rsvp ──>  api/rsvp.js  ── SQL ──>  full
   Names and answers are never exposed to guests.
 - **Admin** (`GET /api/rsvp` with the correct `x-admin-token` header) returns every
 row. `guests.html` sends the token you type into the prompt.
+- The same name replying twice **updates** the existing row instead of creating a
+  duplicate (enforced by a unique index on `lower(name)`).
   
