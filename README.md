@@ -109,3 +109,9 @@ vercel --prod     # deploy to production
 ---
 
 ## 4. Run it locally (so the API actually works)
+
+The error `Unexpected token '<', "<!DOCTYPE "... is not valid JSON` in your
+screenshot happens when `index.html` is opened directly (or served by a plain
+static server like VS Code Live Server). In that case `/api/rsvp` does not exist,
+so the server returns a 404 **HTML** page, and `fetch().json()` chokes on the
+`<!DOCTYPE html>` at the start.
