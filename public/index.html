@@ -231,6 +231,15 @@
             refreshCount();
             setInterval(refreshCount, 5000);
 
+             f.addEventListener('submit', async e => {
+                e.preventDefault();
+                const attending = f.att.value === 'yes';
+                const btn = $('#go');
+                btn.disabled = true;
+                msg.textContent = 'Sending…';
+                
+            try {
+
         
 
 
