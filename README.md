@@ -86,3 +86,8 @@ git push -u origin main
 5. Skip build settings — Vercel reads `vercel.json` (`outputDirectory: "public"`)
    and auto-detects `api/rsvp.js` as a Serverless Function.
 6. Open **Environment Variables** and add:
+
+   | Name | Value | Environments |
+   | --- | --- | --- |
+   | `DATABASE_URL` | your Neon connection string | Production, Preview, Development |
+   | `ADMIN_TOKEN` | any secret word, e.g. `prince-nov-28` | Production, Preview, Development |
