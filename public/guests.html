@@ -109,3 +109,11 @@
                 p.textContent = d.totals.people;
                 y.textContent = d.totals.yes;
                 n.textContent = d.totals.no;
+
+                rows.innerHTML = d.rows.map(r => `<tr><td>${esc(r.name)}</td><td class="${r.attending ? '' : 'no'}">${r.attending ? 'Yes' : 'No'}</td><td>${r.attending ? r.party_size : ''}</td><td>${esc(r.companions)}</td></tr>`).join('');
+
+                live.textContent = 'Live · updated ' + new Date().toLocaleTimeString();
+              } catch {
+                live.textContent = 'Connection lost, retrying…';
+              }
+            }
