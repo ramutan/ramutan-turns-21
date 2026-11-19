@@ -17,3 +17,8 @@ index.html  ── POST /api/rsvp ──>  api/rsvp.js  ── SQL ──>  rsvp
 
                                                        index.html  ── GET  /api/rsvp ──>  api/rsvp.js  ── SQL ──>  COUNT/SUM
             <── JSON { totals: { people } }  (public, headcount only)
+
+guests.html ── GET  /api/rsvp ──>  api/rsvp.js  ── SQL ──>  full rows
+   (with        x-admin-token                       (only when token matches
+   header)                                            ADMIN_TOKEN env var)
+```
