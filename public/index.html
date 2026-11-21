@@ -1,264 +1,277 @@
-<!Doctype html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Prince Ram">
-        <title>Prince's 21st Birthday</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
 
-        <style>
-            :root {
-              --blue: #c6ddfb;
-              --gold: #8a6a1c;
-              --sand: #f0ece1;
-              --line: #b9a577;
-            }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prince's 21st Birthday - You're Invited!</title>
+  <meta name="description" content="You're invited to Prince's 21st Birthday celebration on November 28th at 3:00 PM, Santa Ines, Tierra Nevada, General Trias, Cavite. Please RSVP.">
 
-            * {
-              box-sizing: border-box;
-            }
+  <!-- Open Graph: link preview image when shared in iMessage, WhatsApp, Messenger, Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Prince's 21st Birthday - You're Invited!">
+  <meta property="og:description" content="November 28th at 3:00 PM, Santa Ines, General Trias, Cavite. Please tap to RSVP.">
+  <meta property="og:image" content="https://ramutan-turns-21.vercel.app/invite.png">
+  <meta property="og:url" content="https://ramutan-turns-21.vercel.app/">
+  <meta property="og:image:alt" content="Prince's 21st Birthday invitation">
 
-            body {
-              margin: 0;
-              font-family: Lora, Georgia, serif;
-              color: var(--gold);
-              background:
-              repeating-linear-gradient(0deg, rgba(150, 175, 225, .28) 0 28px, transparent 28px 56px),
-              repeating-linear-gradient(90deg, rgba(150, 175, 225, .28) 0 28px, transparent 28px 56px),
-              #f4f7fe;
-            }
+  <!-- Twitter / X card (also used by some messengers) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prince's 21st Birthday - You're Invited!">
+  <meta name="twitter:description" content="November 28th at 3:00 PM, Santa Ines, General Trias, Cavite. Please tap to RSVP.">
+  <meta name="twitter:image" content="https://ramutan-turns-21.vercel.app/invite.png">
 
-            main {
-              max-width: 520px;
-              margin: 0 auto;
-            }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
 
-            img.page {
-              display: block;
-              width: 100%;
-              height: auto;
-            }
+  <style>
+    :root {
+      --blue: #c6ddfb;
+      --gold: #8a6a1c;
+      --sand: #f0ece1;
+      --line: #b9a577;
+      --page: #d0e0f0;
+    }
 
-            section.form {
-             padding: 6vh 20px;
-            }
+    * {
+      box-sizing: border-box;
+    }
 
-            form {
-              background: #fff;
-              border: 4px solid var(--blue);
-              border-radius: 28px;
-              padding: 32px 26px;
-            }
+    body {
+      margin: 0;
+      font-family: Lora, Georgia, serif;
+      color: var(--gold);
+      background:
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, .35) 0 28px, transparent 28px 56px),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, .35) 0 28px, transparent 28px 56px),
+        var(--page);
+    }
 
-            h1 {
-              font-weight: 500;
-              font-size: 2.1rem;
-              margin: 0 0 20px;
-            }
+    main {
+      max-width: 520px;
+      margin: 0 auto;
+    }
 
-            label,
-            legend {
-              display: block;
-              font-size: 1.05rem;
-              margin: 22px 0 8px;
-              padding: 0;
-            }
+    img.page {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
 
-            fieldset {
-              border: 0;
-              margin: 0;
-              padding: 0;
-            }
+    section.form {
+      padding: 6vh 20px;
+    }
 
-            input[type=text] {
-              width: 100%;
-              font: inherit;
-              color: inherit;
-              padding: 14px;
-             border: 1.5px solid var(--line);
-              border-radius: 12px;
-              background: #fff;
-            }
+    form {
+      background: #fff;
+      border: 4px solid var(--blue);
+      border-radius: 28px;
+      padding: 32px 26px;
+    }
 
-            .opt {
-              display: block;
-              margin: 0 0 10px;
-            }
+    h1 {
+      font-weight: 500;
+      font-size: 2.1rem;
+      margin: 0 0 20px;
+    }
 
-            .opt input {
-              position: absolute;
-              opacity: 0;
-            }
+    label,
+    legend {
+      display: block;
+      font-size: 1.05rem;
+      margin: 22px 0 8px;
+      padding: 0;
+    }
 
-            .opt span {
-              display: block;
-              padding: 15px 16px;
-              background: var(--sand);
-              border-radius: 12px;
-              border: 2px solid transparent;
-              cursor: pointer;
-            }
+    fieldset {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
 
-            .opt input:checked + span {
-              border-color: var(--gold);
-              background: #e8dfc6;
-            }
+    input[type=text] {
+      width: 100%;
+      font: inherit;
+      color: inherit;
+      padding: 14px;
+      border: 1.5px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+    }
 
-            .opt input:focus-visible + span,
-            input[type=text]:focus-visible,
-            button:focus-visible {
-              outline: 3px solid #5b8bd6;
-              outline-offset: 2px;
-            }
+    .opt {
+      display: block;
+      margin: 0 0 10px;
+    }
 
-            button {
-              width: 100%;
-              margin-top: 22px;
-              font: inherit;
-              font-size: 1.2rem;
-              color: var(--gold);
-              background: var(--blue);
-              border: 0;
-              border-radius: 999px;
-              padding: 16px;
-              cursor: pointer;
-            }
+    .opt input {
+      position: absolute;
+      opacity: 0;
+    }
 
-            button:disabled {
-              opacity: .6;
-              cursor: wait;
-            }
+    .opt span {
+      display: block;
+      padding: 15px 16px;
+      background: var(--sand);
+      border-radius: 12px;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
 
-            #msg {
-              min-height: 1.4em;
-              margin: 12px 0 0;
-              text-align: center;
-              font-size: .95rem;
-            }
+    .opt input:checked + span {
+      border-color: var(--gold);
+      background: #e8dfc6;
+    }
 
-            #count {
-              text-align: center;
-              margin: 14px 0 0;
-              font-size: .95rem;
-            }
+    .opt input:focus-visible + span,
+    input[type=text]:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #5b8bd6;
+      outline-offset: 2px;
+    }
 
-            .hide {
-              display: none;
-            }
-        </style>      
-    </head>
+    button {
+      width: 100%;
+      margin-top: 22px;
+      font: inherit;
+      font-size: 1.2rem;
+      color: var(--gold);
+      background: var(--blue);
+      border: 0;
+      border-radius: 999px;
+      padding: 16px;
+      cursor: pointer;
+    }
 
-    <body>
-        <main>
-            <img class="page" src="invite.png" alt="You're invited to Prince's 21st birthday, November 28th at 3:00 PM, Santa Ines, Blk. 4, Lot 15, Tierra Nevada Phase 6A, Brgy. San Francisco, General Trias, Cavite">
+    button:disabled {
+      opacity: .6;
+      cursor: wait;
+    }
 
-            <section class="form">
-                <form id="f">
-                    <h1>You're Invited</h1>
+    #msg {
+      min-height: 1.4em;
+      margin: 12px 0 0;
+      text-align: center;
+      font-size: .95rem;
+    }
 
-                    <label for="name">Your name</label>
-                    <input id="name" type="text" maxlength="100" autocomplete="name" required>
+    #count {
+      text-align: center;
+      margin: 14px 0 0;
+      font-size: .95rem;
+    }
 
-                    <fieldset>
-                        <legend>Will you be attending the birthday celebration?</legend>
-                        <label class="opt">
-                            <input type="radio" name="att" value="yes" required>
-                            <span>Yes, I'll be there!</span>
-                        </label>
-                        
-                        <label class="opt">
-                            <input type="radio" name="att" value="no">
-                            <span>Sorry, I won't be able to attend.</span>
-                        </label>
-                    </fieldset>
-                    
-                    <fieldset id="sizeBox" class="hide">
-                        <legend>How many people will be attending, including you?</legend>
-                        <label class="opt">
-                            <input type="radio" name="size" value="1">
-                            <span>1 guest (Just me)</span>
-                    </label>
+    .hide {
+      display: none;
+    }
+  </style>
+</head>
 
-                    <label class="opt">
-                        <input type="radio" name="size" value="2">
-                        <span>2 guests</span>
-                    </label>
+<body>
+  <main>
+    <img class="page" src="invite.png" alt="You're invited to Prince's 21st birthday, November 28th at 3:00 PM, Santa Ines, Blk. 4, Lot 15, Tierra Nevada Phase 6A, Brgy. San Francisco, General Trias, Cavite">
 
-                    <label class="opt">
-                        <input type="radio" name="size" value="3">
-                        <span>3 guests</span>
-                    </label>
-                    
-                    <label class="opt">
-                        <input type="radio" name="size" value="4">
-                        <span>4 or more guests</span>
-                    </label>
+    <section class="form">
+      <form id="f">
+        <h1>You're Invited</h1>
 
-                    <label for="comp">Who will be coming with you?</label>
-                        <input id="comp" type="text" maxlength="300">
-                    </fieldset>
+        <label for="name">Your name</label>
+        <input id="name" type="text" maxlength="100" autocomplete="name" required>
 
-                    <button id="go" type="submit">RSVP</button>
-                    <p id="msg" role="status" aria-live="polite"></p>
-                    <p id="count"></p>
-                </form>
-            </section>
+        <fieldset>
+          <legend>Will you be attending the birthday celebration?</legend>
+          <label class="opt">
+            <input type="radio" name="att" value="yes" required>
+            <span>Yes, I'll be there!</span>
+          </label>
+          <label class="opt">
+            <input type="radio" name="att" value="no">
+            <span>Sorry, I won't be able to attend.</span>
+          </label>
+        </fieldset>
 
-            <img class="page" src="photo.png" alt="Prince holding a bouquet of flowers. Don't compare your Chapter 1 to someone else's Chapter 20. Life is not a race.">
-        </main>
+        <fieldset id="sizeBox" class="hide">
+          <legend>How many people will be attending, including you?</legend>
+          <label class="opt">
+            <input type="radio" name="size" value="1">
+            <span>1 guest (Just me)</span>
+          </label>
+          <label class="opt">
+            <input type="radio" name="size" value="2">
+            <span>2 guests</span>
+          </label>
+          <label class="opt">
+            <input type="radio" name="size" value="3">
+            <span>3 guests</span>
+          </label>
+          <label class="opt">
+            <input type="radio" name="size" value="4">
+            <span>4 or more guests</span>
+          </label>
 
-        <script>
-            const $ = s => document.querySelector(s);
-            const f = $('#f'), msg = $('#msg');
+          <label for="comp">Who will be coming with you?</label>
+          <input id="comp" type="text" maxlength="300">
+        </fieldset>
 
-            document.querySelectorAll('input[name=att]').forEach(r => r.addEventListener('change', () => {
-                const yes = f.att.value === 'yes';
-                $('#sizeBox').classList.toggle('hide', !yes);
-                if (yes && !f.size.value) f.size.value = '1';
-            }));
+        <button id="go" type="submit">RSVP</button>
+        <p id="msg" role="status" aria-live="polite"></p>
+        <p id="count"></p>
+      </form>
+    </section>
 
-            async function refreshCount() {
-                try {
-                    const r = await fetch('/api/rsvp');
-                    const d = await r.json();
-                    const n = d.totals?.people ?? 0;
-                    $('#count').textContent = n ? `${n} ${n === 1 ? 'guest has' : 'guests have'} confirmed so far.` : '';
-                } catch {}
-            }
-            refreshCount();
-            setInterval(refreshCount, 5000);
+    <img class="page" src="photo.png" alt="Prince holding a bouquet of flowers. Don't compare your Chapter 1 to someone else's Chapter 20. Life is not a race.">
+  </main>
 
-             f.addEventListener('submit', async e => {
-                e.preventDefault();
-                const attending = f.att.value === 'yes';
-                const btn = $('#go');
-                btn.disabled = true;
-                msg.textContent = 'Sending…';
+  <script>
+    const $ = s => document.querySelector(s);
+    const f = $('#f'), msg = $('#msg');
 
-            try {
-                const r = await fetch('/api/rsvp', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        name: $('#name').value,
-                        attending,
-                        party_size: attending ? +f.size.value : 0,
-                        companions: attending ? $('#comp').value : ''
-                    })
-                });
-                const d = await r.json();
-                if (!r.ok) throw new Error(d.error);
-                msg.textContent = attending ? 'Thank you! See you on November 28th.' : 'Thanks for letting me know. You will be missed!';
-                refreshCount();
-                } catch (err) {
-                    msg.textContent = err.message || 'Could not send your RSVP. Please try again.';
-                } finally {
-                    btn.disabled = false;
-                }
-            });
+    document.querySelectorAll('input[name=att]').forEach(r => r.addEventListener('change', () => {
+      const yes = f.att.value === 'yes';
+      $('#sizeBox').classList.toggle('hide', !yes);
+      if (yes && !f.size.value) f.size.value = '1';
+    }));
+
+    async function refreshCount() {
+      try {
+        const r = await fetch('/api/rsvp');
+        const d = await r.json();
+        const n = d.totals?.people ?? 0;
+        $('#count').textContent = n ? `${n} ${n === 1 ? 'guest has' : 'guests have'} confirmed so far.` : '';
+      } catch {}
+    }
+    refreshCount();
+    setInterval(refreshCount, 5000);
+
+    f.addEventListener('submit', async e => {
+      e.preventDefault();
+      const attending = f.att.value === 'yes';
+      const btn = $('#go');
+      btn.disabled = true;
+      msg.textContent = 'Sending…';
+      try {
+        const r = await fetch('/api/rsvp', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            name: $('#name').value,
+            attending,
+            party_size: attending ? +f.size.value : 0,
+            companions: attending ? $('#comp').value : ''
+          })
+        });
+        const d = await r.json();
+        if (!r.ok) throw new Error(d.error);
+        msg.textContent = attending ? 'Thank you! See you on November 28th.' : 'Thanks for letting me know. You will be missed!';
+        refreshCount();
+      } catch (err) {
+        msg.textContent = err.message || 'Could not send your RSVP. Please try again.';
+      } finally {
+        btn.disabled = false;
+      }
+    });
   </script>
 </body>
+
 </html>
